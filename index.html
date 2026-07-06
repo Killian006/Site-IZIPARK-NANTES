@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Aéroport Nantes - Navette gratuite 2mn - IZIPARK NANTES</title>
+    <meta name="description" content="Parking Aéroport de Nantes ✈️, navette gratuite en 2 mn, parking privé et sécurisé, tarifs pas cher." />
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bibliothèques JS externes -->
+    <script src="https://www.izipark-nantes.fr/uploads/basecamp/scripts/jquery-1.8.2.min.js"></script>
+    <script src="https://www.izipark-nantes.fr/uploads/basecamp/scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="https://www.izipark-nantes.fr/tarteaucitron/tarteaucitron.js"></script>
+
+    <!-- Icônes / Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <meta name="theme-color" content="#14181b">
+</head>
+
+<body id="haut">
+
+    <div id="preloader">
+        <svg class="car" width="102" height="40" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(2 1)" stroke="#e7841f" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                <path class="car__body" d="M47.293 2.375C52.927.792 54.017.805 54.017.805c2.613-.445 6.838-.337 9.42.237l8.381 1.863c2.59.576 6.164 2.606 7.98 4.531l6.348 6.732 6.245 1.877c3.098.508 5.609 3.431 5.609 6.507v4.206c0 .29-2.536 4.189-5.687 4.189H36.808c-2.655 0-4.34-2.1-3.688-4.67 0 0 3.71-19.944 14.173-23.902zM36.5 15.5h54.01" stroke-width="3"/>
+                <ellipse class="car__wheel--left" stroke-width="3.2" fill="#FFF" cx="83.493" cy="30.25" rx="6.922" ry="6.808"/>
+                <ellipse class="car__wheel--right" stroke-width="3.2" fill="#FFF" cx="46.511" cy="30.25" rx="6.922" ry="6.808"/>
+                <path class="car__line car__line--top" d="M22.5 16.5H2.475" stroke-width="3"/>
+                <path class="car__line car__line--middle" d="M20.5 23.5H.4755" stroke-width="3"/>
+                <path class="car__line car__line--bottom" d="M25.5 9.5h-19" stroke-width="3"/>
+            </g>
+        </svg>
+    </div>
+
+    <div id="progress-scroll"></div>
+
+    <div id="lang-switch">
+        <button type="button" data-lang="fr" class="actif">FR</button>
+        <button type="button" data-lang="en">EN</button>
+    </div>
+
+    <!-- En-tête -->
+    <header id="header">
+        <div class="container">
+            <div id="logo">
+                <a href="https://www.izipark-nantes.fr/" title="Accueil - IZI Park Nantes">
+                    <img class="logo-img" src="img/logo.png" alt="IZI Park Nantes" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="menu-principal" aria-label="Menu principal">
+        <div class="container">
+        <ul class="nav-global">
+            <li class="menu-home active">
+                <a href="/" title="Accueil">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 3L4 9v12h5v-7h6v7h5V9z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="/tarifs.html" data-fr="Tarifs" data-en="Rates">Tarifs</a></li>
+            <li class="has-dropdown">
+                <a href="/prestations.html" data-fr="Prestations" data-en="Services">Prestations</a>
+                <ul class="dropdown">
+                    <li><a href="/navette.html" data-fr="Parking + navette gratuite aéroport" data-en="Parking + free airport shuttle">Parking + navette gratuite aéroport</a></li>
+                </ul>
+            </li>
+            <li><a href="/acces.html" data-fr="Accès" data-en="Directions">Accès</a></li>
+            <li><a href="/avis.html" data-fr="Avis" data-en="Reviews">Avis</a></li>
+            <li class="has-dropdown">
+                <a href="/infos.html" data-fr="Infos pratiques" data-en="Useful info">Infos pratiques</a>
+                <ul class="dropdown">
+                    <li><a href="/securise.html" data-fr="Parking sécurisé" data-en="Secure parking">Parking sécurisé</a></li>
+                    <li><a href="/contact.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+                    <li><a href="/plan.pdf" target="_blank" data-fr="Plan d'accès (PDF)" data-en="Access map (PDF)">Plan d'accès (PDF)</a></li>
+                    <li><a href="/cgv.pdf" target="_blank" data-fr="CGV (PDF)" data-en="Terms (PDF)">CGV (PDF)</a></li>
+                    <li><a href="/assurance.pdf" target="_blank" data-fr="Assurance annulation (PDF)" data-en="Cancellation insurance (PDF)">Assurance annulation (PDF)</a></li>
+                    <li><a href="/faq.html" data-fr="Foire aux questions" data-en="FAQ">Foire aux questions</a></li>
+                    <li><a href="/actualites.html" data-fr="Actualités" data-en="News">Actualités</a></li>
+                    <li><a href="/partenaires.html" data-fr="Partenaires" data-en="Partners">Partenaires</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+    <!-- HÉRO + RÉSERVATION -->
+    <section id="hero">
+        <svg id="hero-plane" viewBox="0 0 24 24" fill="#ffffff"><path d="M22 15.5v-2l-8.5-5V3.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v5l-8.5 5v2l8.5-2.5V19l-2.5 1.5V22l4-1 4 1v-1.5L13.5 19v-6l8.5 2.5z"/></svg>
+        <div class="hero-inner">
+            <span class="eyebrow" data-fr="Aéroport Nantes Atlantique" data-en="Nantes Atlantique Airport">Aéroport Nantes Atlantique</span>
+            <h1 data-fr="Votre place de parking à <span>2 minutes</span> de l'aéroport" data-en="Your parking spot <span>2 minutes</span> from the airport">Votre place de parking à <span>2 minutes</span> de l'aéroport</h1>
+            <p class="hero-sub" data-fr="Navette gratuite, site privé et sécurisé, ouvert 24h/24 et 7j/7. Réservez votre place en moins d'une minute." data-en="Free shuttle, private and secure site, open 24/7. Book your spot in under a minute.">Navette gratuite, site privé et sécurisé, ouvert 24h/24 et 7j/7. Réservez votre place en moins d'une minute.</p>
+
+            <section id="reservation">
+                <h1 style="display: inline-block;" data-fr="Réservez votre place de parking" data-en="Book your parking spot">Réservez votre place de parking</h1>
+                
+                <form name="formResa" action="https://secure.inkara.com/izipark/generic/pages/record.aspx" onsubmit="get_url_inkara(this)" method="get">
+                    
+                    <!-- Champs cachés obligatoires pour Inkara -->
+                    <input type="hidden" name="table" value="ticket_pay">
+                    <input type="hidden" name="ff_aa_ti_stay_start_datetime" value="">
+                    <input type="hidden" name="ff_aa_ti_stay_end_datetime" value="">
+                    <input type="hidden" name="heuredepart" value="">
+                    <input type="hidden" name="heurearrivee" value="">
+                    <input type="hidden" name="reedit" value="aa_ti_status,2">
+                    <input type="hidden" name="save" value="y">
+
+                    <div class="form-resa-container">
+                        
+                        <!-- BLOC ARRIVÉE -->
+                        <div class="champ-groupe">
+                            <input type="text" name="begin" id="begin" required style="width: 140px;"
+                                placeholder="Arrivée (jj/mm/aaaa)" 
+                                data-fr-placeholder="Arrivée (jj/mm/aaaa)" 
+                                data-en-placeholder="Arrival (dd/mm/yyyy)" />
+                                
+                            <select id="heurea" name="heurea" class="select-resa">
+                                <option value="00">00 H</option><option value="01">01 H</option><option value="02">02 H</option><option value="03">03 H</option><option value="04">04 H</option><option value="05">05 H</option><option value="06">06 H</option><option value="07">07 H</option><option value="08">08 H</option><option value="09" selected>09 H</option><option value="10">10 H</option><option value="11">11 H</option><option value="12">12 H</option><option value="13">13 H</option><option value="14">14 H</option><option value="15">15 H</option><option value="16">16 H</option><option value="17">17 H</option><option value="18">18 H</option><option value="19">19 H</option><option value="20">20 H</option><option value="21">21 H</option><option value="22">22 H</option><option value="23">23 H</option>
+                            </select>
+                            <select id="mina" name="mina" class="select-resa">
+                                <option value="00" selected>00 min</option><option value="15">15 min</option><option value="30">30 min</option><option value="45">45 min</option>
+                            </select>
+                        </div>
+
+                        <!-- BLOC RETOUR -->
+                        <div class="champ-groupe">
+                            <input type="text" name="end" id="end" required style="width: 140px;"
+                                placeholder="Retour (jj/mm/aaaa)" 
+                                data-fr-placeholder="Retour (jj/mm/aaaa)" 
+                                data-en-placeholder="Return (dd/mm/yyyy)" />
+                                
+                            <select id="heured" name="heured" class="select-resa">
+                                <option value="00">00 H</option><option value="01">01 H</option><option value="02">02 H</option><option value="03">03 H</option><option value="04">04 H</option><option value="05">05 H</option><option value="06">06 H</option><option value="07">07 H</option><option value="08">08 H</option><option value="09">09 H</option><option value="10">10 H</option><option value="11">11 H</option><option value="12">12 H</option><option value="13">13 H</option><option value="14">14 H</option><option value="15">15 H</option><option value="16">16 H</option><option value="17">17 H</option><option value="18">18 H</option><option value="19" selected>19 H</option><option value="20">20 H</option><option value="21">21 H</option><option value="22">22 H</option><option value="23">23 H</option>
+                            </select>
+                            <select id="mind" name="mind" class="select-resa">
+                                <option value="00" selected>00 min</option><option value="15">15 min</option><option value="30">30 min</option><option value="45">45 min</option>
+                            </select>
+                        </div>
+
+                        <!-- BLOC CODE PROMO & BOUTONS -->
+                        <div class="champ-groupe">
+                            <input type="text" name="ff_aa_ti_code" id="ff_aa_ti_code" style="width: 110px;"
+                                placeholder="Code Promo" 
+                                data-fr-placeholder="Code Promo" 
+                                data-en-placeholder="Promo Code" />
+                                
+                            <!-- Changé en <button> pour permettre la traduction du texte -->
+                            <button type="submit" class="bouton" data-fr="Rechercher" data-en="Search">Rechercher</button>
+                            
+                            <a href="https://secure.inkara.com/izipark/login.aspx" class="bouton btn-login" data-fr="Login" data-en="Login">Login</a>
+                        </div>
+
+                    </div>
+                </form>
+            </section>
+
+            <div class="stats-bar">
+                <div class="stat reveal retard-1">
+                    <span class="valeur" data-cible="2" data-suffixe=" min">0 min</span>
+                    <span class="label" data-fr="Navette gratuite" data-en="Free shuttle">Navette gratuite</span>
+                </div>
+                <div class="stat reveal retard-2">
+                    <span class="valeur" data-cible="24" data-suffixe="h/24">0h/24</span>
+                    <span class="label" data-fr="Ouvert 7j/7" data-en="Open 7 days">Ouvert 7j/7</span>
+                </div>
+                <div class="stat reveal retard-3">
+                    <span class="valeur" data-cible="10" data-suffixe=" ans">0 ans</span>
+                    <span class="label" data-fr="D'expérience" data-en="Of experience">D'expérience</span>
+                </div>
+                <div class="stat reveal retard-3">
+                    <span class="valeur" data-cible="100" data-suffixe="%">0%</span>
+                    <span class="label" data-fr="Site sécurisé" data-en="Secure site">Site sécurisé</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNATURE : CHRONO NAVETTE -->
+    <section id="chrono-navette">
+        <div class="chrono-inner">
+            <h2 data-fr="Du parking à l'aéroport, chrono en main" data-en="From the parking lot to the airport, stopwatch in hand">Du parking à l'aéroport, chrono en main</h2>
+            <p class="sous-titre" data-fr="Notre navette fait l'aller-retour en continu, jour et nuit." data-en="Our shuttle runs back and forth continuously, day and night.">Notre navette fait l'aller-retour en continu, jour et nuit.</p>
+
+            <div class="route-track reveal">
+                <div class="point">
+                    <div class="icone-rond"><i class="fas fa-square-parking"></i></div>
+                    <span class="label-point" data-fr="Votre parking" data-en="Your parking">Votre parking</span>
+                </div>
+                <div class="ligne"></div>
+                <div class="navette-icone"><i class="fas fa-shuttle-van"></i></div>
+                <div class="point">
+                    <div class="icone-rond"><i class="fas fa-plane-departure"></i></div>
+                    <span class="label-point" data-fr="Terminal Nantes" data-en="Nantes Terminal">Terminal Nantes</span>
+                </div>
+            </div>
+
+            <div class="chrono-badge">
+                <span class="chiffre">02:00</span>
+                <span class="texte" data-fr="Minutes chrono, navette incluse" data-en="Minutes flat, shuttle included">Minutes chrono, navette incluse</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Contenu principal -->
+        <main id="contents">
+            <h2 class="main-title reveal" data-fr="Un parking pensé pour votre tranquillité" data-en="A parking lot designed for your peace of mind">Un parking pensé pour votre tranquillité</h2>
+
+            <!-- Ligne 1 : les 3 arguments, chacun avec sa photo -->
+            <div class="bloc-services-grid">
+                <article id="bloc-economique" class="carte-service reveal-left">
+                    <div class="carte-service-inner">
+                        <div class="face face-avant">
+                            <i class="fas fa-piggy-bank icone-service"></i>
+                            <h3 data-fr="Économique" data-en="Affordable">Économique</h3>
+                            <p class="accroche" data-fr="Cliquez pour voir nos tarifs" data-en="Click to see our rates">Cliquez pour voir nos tarifs</p>
+                        </div>
+                        <div class="face face-arriere">
+                            <ul>
+                                <li data-fr="Partez en week-end dès 29 €" data-en="Weekend getaways from €29">Partez en week-end dès 29 €</li>
+                                <li data-fr="Recharge de véhicule électrique pour 25 €" data-en="Electric vehicle charging for €25">Recharge de véhicule électrique pour 25 €</li>
+                                <li data-fr="Faites des économies sur votre parking" data-en="Save money on your parking">Faites des économies sur votre parking</li>
+                            </ul>
+                            <a class="bt-savoir" href="https://www.izipark-nantes.fr/parking-aeroport-nantes-tarifs.html" data-fr="En savoir plus »" data-en="Learn more »">En savoir plus »</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="bloc-pratique" class="carte-service reveal retard-1">
+                    <div class="carte-service-inner">
+                        <div class="face face-avant">
+                            <i class="fas fa-bolt icone-service"></i>
+                            <h3 data-fr="Pratique et rapide" data-en="Quick and easy">Pratique et rapide</h3>
+                            <p class="accroche" data-fr="Cliquez pour voir le parcours" data-en="Click to see the process">Cliquez pour voir le parcours</p>
+                        </div>
+                        <div class="face face-arriere">
+                            <ul>
+                                <li data-fr="La réservation en 1 minute" data-en="Booking in 1 minute">La réservation en 1 minute</li>
+                                <li data-fr="L'arrivée sans attente" data-en="Arrival without waiting">L'arrivée sans attente</li>
+                                <li data-fr="Le retour, votre voiture vous attend" data-en="On return, your car is waiting">Le retour, votre voiture vous attend</li>
+                            </ul>
+                            <a class="bt-savoir" href="#" data-fr="En savoir plus »" data-en="Learn more »">En savoir plus »</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="bloc-securise" class="carte-service reveal-right">
+                    <div class="carte-service-inner">
+                        <div class="face face-avant">
+                            <i class="fas fa-shield-halved icone-service"></i>
+                            <h3 data-fr="Sécurisé" data-en="Secure">Sécurisé</h3>
+                            <p class="accroche" data-fr="Cliquez pour voir nos garanties" data-en="Click to see our guarantees">Cliquez pour voir nos garanties</p>
+                        </div>
+                        <div class="face face-arriere">
+                            <ul>
+                                <li data-fr="Site sous surveillance vidéo" data-en="Video-monitored site">Site sous surveillance vidéo</li>
+                                <li data-fr="Places de parking spacieuses" data-en="Spacious parking spaces">Places de parking spacieuses</li>
+                                <li data-fr="Ouvert 7j/7 toute l'année" data-en="Open 7 days a week, year-round">Ouvert 7j/7 toute l'année</li>
+                            </ul>
+                            <a class="bt-savoir" href="https://www.izipark-nantes.fr/parking-securise-aeroport-nantes.html" data-fr="En savoir plus »" data-en="Learn more »">En savoir plus »</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Ligne 2 : Actualités et Trafic, côte à côte -->
+            <div class="bloc-secondaire-grid">
+                <div id="bloc-actu" class="reveal-left">
+                    <div class="bloc-titre"><i class="fas fa-bullhorn"></i><span data-fr="Actualités" data-en="News">Actualités</span></div>
+                    <div class="cadre-actu">
+                        <div class="slider-padding" id="liquid-id2">
+                            <h4 class="actu-title" data-fr="Nous contacter en 2026" data-en="Contact us in 2026">Nous contacter en 2026</h4>
+                            <p data-fr="Accueil téléphonique : ouverture du Lundi au Vendredi de 14h à 18h." data-en="Phone reception: open Monday to Friday, 2pm to 6pm.">Accueil téléphonique : ouverture du Lundi au Vendredi de 14h à 18h.</p>
+                            <p data-fr="Navette : 06 75 30 18 51 (réservé au transfert parking-aéroport)." data-en="Shuttle: 06 75 30 18 51 (parking-airport transfer only).">Navette : 06 75 30 18 51 (réservé au transfert parking-aéroport).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bloc-traffic" class="reveal-right">
+                    <div class="bloc-titre"><i class="fas fa-car-side"></i><span data-fr="Trafic Nantes" data-en="Nantes traffic">Trafic Nantes</span></div>
+                    <div class="cadre-noir">
+                        <div class="carte-embed">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.944678228853!2d-1.5979724242986162!3d47.178519717441354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805eba6c81dfe8f%3A0x15ab603343c648e!2sIZIPARK!5e0!3m2!1sfr!2sfr!4v1783270496159!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                        <div class="map-link-container">
+                            <a href="https://maps.app.goo.gl/hbpFYhQbvZTqbjLj7" target="_blank" rel="noopener" class="btn-map" data-fr="Accéder à Google Maps »" data-en="Open in Google Maps »">Accéder à Google Maps »</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- VIDÉO -->
+    <section id="section-video" class="container">
+        <h2 class="reveal" data-fr="Votre trajet du parking à l'aéroport" data-en="Your trip from the parking lot to the airport">Votre trajet du parking à l'aéroport</h2>
+        <div class="video-frame reveal-scale">
+            <iframe src="https://www.youtube.com/embed/xp2qfFLH-T8?si=h6mTNfZtmdc8tcUi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- RÉSEAUX SOCIAUX -->
+    <div class="contenu reveal">
+        <a href="https://www.youtube.com/@IZIPARKNANTES" target="_blank" class="icone" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/iziparknantes/?fref=ts#" target="_blank" class="icone" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="tel:+33675301851" class="icone" title="Téléphone"><i class="fas fa-phone"></i></a>
+        <a href="mailto:contact@izipark-nantes.fr" class="icone" title="E-mail"><i class="fab fa-at"></i></a>
+    </div>
+
+    <!-- Pied de page -->
+    <footer id="footer">
+        <div class="container">
+            <p><strong>IZIPARK NANTES</strong></p>
+            <p>24 rue Christophe Colomb, 44340 Bouguenais</p>
+            <p><span data-fr="Tél" data-en="Phone">Tél</span>: 02 40 68 88 80 | <span data-fr="Navette" data-en="Shuttle">Navette</span> : 06 75 30 18 51 | E-mail: <a class="mail" href="mailto:contact@izipark-nantes.fr">contact@izipark-nantes.fr</a></p>
+            <hr class="footer-divider">
+            <p data-fr="© Copyright 2026 Killian GALLET — Mentions légales" data-en="© Copyright 2026 Killian GALLET — Legal notice">© Copyright 2026 - Killian GALLET — Mentions légales</p>
+        </div>
+    </footer>
+
+    <!-- Bouton Retour en haut -->
+    <a id="cRetour" class="cInvisible" href="#haut" title="Retour en haut">&#8593;</a>
+
+    <!-- Script principal -->
+    <script src="java/script.js"></script>
+</body>
+</html>

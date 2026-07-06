@@ -1,0 +1,54 @@
+/* ==========================================================
+   IZIPARK NANTES — Responsive
+   ========================================================== */
+
+@media screen and (max-width: 960px) {
+    .layout-colonnes {
+        grid-template-columns: 1fr;
+    }
+
+    .bloc-secondaire-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 22px;
+    }
+
+    .stats-bar .stat:nth-child(2) { border-right: none; }
+
+    .route-track .point { width: 70px; }
+    .route-track .point .icone-rond { width: 50px; height: 50px; font-size: 1.2em; }
+    .route-track .ligne { left: 60px; right: 60px; }
+    .route-track .navette-icone { left: 60px; }
+    @keyframes rouler {
+        0%   { opacity: 1; left: 60px; }
+        92%  { opacity: 1; }
+        100% { left: calc(100% - 105px); opacity: 1; }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .nav-global { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; }
+    .nav-global > li > a { padding: 12px 10px; font-size: 0.85em; white-space: nowrap; }
+
+    #hero { padding: 60px 0 100px; }
+    #hero h1 { font-size: 1.5em; }
+
+    .form-resa-container { flex-direction: column; align-items: stretch; }
+    .champ-date { width: 100%; }
+
+    .stats-bar { grid-template-columns: 1fr 1fr; }
+
+    .chrono-inner .route-track { padding: 0 6px; }
+    .route-track .point span.label-point { font-size: 0.68em; }
+
+    .video-frame iframe { height: 220px; }
+
+    .contenu { gap: 20px; }
+    .icone { width: 70px; height: 70px; font-size: 34px; }
+
+    #lang-switch { top: 10px; right: 10px; }
+    #lang-switch button { padding: 6px 10px; font-size: 0.75em; }
+}
