@@ -28,4 +28,4 @@ L'objectif de ce prototype est de démontrer comment une modernisation de l'inte
 Je m'appelle **Killian GALLET**, étudiant en cycle Préparatoire à la Formation d'Ingénieur à l'Université de Technologie de Troyes (UTT). Passionné par le développement web et l'ergonomie, je réalise ce type de projet pour mettre en pratique mes compétences et accompagner les entreprises dans leur transition numérique.
 
 * [Me contacter par email](mailto:killian.gallet@utt.fr)
-* [Mon profil LinkedIn](www.linkedin.com/in/killian-gallet-utt)
+* [Mon profil LinkedIn](https://www.linkedin.com/in/killian-gallet-utt)
