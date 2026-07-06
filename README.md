@@ -4,7 +4,7 @@ Ce projet est une proposition de refonte (non-officielle) de la page d'accueil d
 
 L'objectif de ce prototype est de démontrer comment une modernisation de l'interface utilisateur (UI) et de l'expérience utilisateur (UX) peut fluidifier le parcours client et potentiellement augmenter le taux de conversion, tout en conservant les logiques métier existantes.
 
-👉 **[Voir le site en direct (Live Demo)](METTEZ_VOTRE_LIEN_GITHUB_PAGES_ICI)**
+👉 **[Voir le site en direct (Live Demo)](https://killian006.github.io/Site-IZIPARK-NANTES/)**
 
 ## ✨ Fonctionnalités et Améliorations
 
@@ -27,5 +27,5 @@ L'objectif de ce prototype est de démontrer comment une modernisation de l'inte
 
 Je m'appelle **Killian GALLET**, étudiant en cycle Préparatoire à la Formation d'Ingénieur à l'Université de Technologie de Troyes (UTT). Passionné par le développement web et l'ergonomie, je réalise ce type de projet pour mettre en pratique mes compétences et accompagner les entreprises dans leur transition numérique.
 
-* [Me contacter par email](mailto:VOTRE_ADRESSE_EMAIL)
+* [Me contacter par email](mailto:killian.gallet@utt.fr)
 * [Mon profil LinkedIn](www.linkedin.com/in/killian-gallet-utt)
