@@ -30,4 +30,5 @@ Je m'appelle **Killian GALLET**, étudiant en cycle Préparatoire à la Formatio
 * [Me contacter par email](mailto:killian.gallet@utt.fr)
 * [Mon profil LinkedIn](https://www.linkedin.com/in/killian-gallet-utt)
 
-* © 2026 Killian GALLET. Tous droits réservés. L'utilisation de ce code, en partie ou en totalité, à des fins commerciales sans accord préalable est strictement interdite.
+## Copyright
+© 2026 Killian GALLET. Tous droits réservés. L'utilisation de ce code, en partie ou en totalité, à des fins commerciales sans accord préalable est strictement interdite.
